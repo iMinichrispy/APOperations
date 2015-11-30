@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		FA430AC01C077EF000D38567 /* APOperations-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FA430AC11C077EF000D38567 /* Build configuration list for PBXAggregateTarget "APOperations-Universal" */;
+			buildPhases = (
+				FA430AC41C077EFA00D38567 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "APOperations-Universal";
+			productName = "APOperations-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		FA0A6A3C1BEA4FE300FC516E /* APOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A3B1BEA4FE300FC516E /* APOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A451BEA4FF700FC516E /* APOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A431BEA4FF700FC516E /* APOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A461BEA4FF700FC516E /* APOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A441BEA4FF700FC516E /* APOperation.m */; };
+		FA0A6A4F1BEA507C00FC516E /* APOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A4D1BEA507C00FC516E /* APOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A501BEA507C00FC516E /* APOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A4E1BEA507C00FC516E /* APOperationQueue.m */; };
+		FA0A6A531BEA513D00FC516E /* NSOperation+APOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A511BEA513D00FC516E /* NSOperation+APOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A541BEA513D00FC516E /* NSOperation+APOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A521BEA513D00FC516E /* NSOperation+APOperation.m */; };
+		FA0A6A571BEA516B00FC516E /* APReachabilityController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A551BEA516B00FC516E /* APReachabilityController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A581BEA516B00FC516E /* APReachabilityController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A561BEA516B00FC516E /* APReachabilityController.m */; };
+		FA0A6A5B1BEA51A200FC516E /* APNetworkIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A591BEA51A200FC516E /* APNetworkIndicatorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A5C1BEA51A200FC516E /* APNetworkIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A5A1BEA51A200FC516E /* APNetworkIndicatorController.m */; };
+		FA0A6A611BEA525A00FC516E /* APReachabilityCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A5F1BEA525A00FC516E /* APReachabilityCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A621BEA525A00FC516E /* APReachabilityCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A601BEA525A00FC516E /* APReachabilityCondition.m */; };
+		FA0A6A651BEA52B600FC516E /* APMutuallyExclusiveCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A631BEA52B600FC516E /* APMutuallyExclusiveCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A661BEA52B600FC516E /* APMutuallyExclusiveCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A641BEA52B600FC516E /* APMutuallyExclusiveCondition.m */; };
+		FA0A6A691BEA52E500FC516E /* APLocationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A671BEA52E500FC516E /* APLocationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A6A1BEA52E500FC516E /* APLocationCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A681BEA52E500FC516E /* APLocationCondition.m */; };
+		FA0A6A6D1BEA531700FC516E /* APCalendarCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A6B1BEA531700FC516E /* APCalendarCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A6E1BEA531700FC516E /* APCalendarCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A6C1BEA531700FC516E /* APCalendarCondition.m */; };
+		FA0A6A711BEA536B00FC516E /* APGroupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A6F1BEA536B00FC516E /* APGroupOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A721BEA536B00FC516E /* APGroupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A701BEA536B00FC516E /* APGroupOperation.m */; };
+		FA0A6A751BEA53B500FC516E /* APOperationConditionEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A731BEA53B500FC516E /* APOperationConditionEvaluator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A761BEA53B500FC516E /* APOperationConditionEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A741BEA53B500FC516E /* APOperationConditionEvaluator.m */; };
+		FA0A6A791BEA53E200FC516E /* APOperationObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A771BEA53E200FC516E /* APOperationObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A7D1BEA53F900FC516E /* APBlockObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A7B1BEA53F900FC516E /* APBlockObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A7E1BEA53F900FC516E /* APBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A7C1BEA53F900FC516E /* APBlockObserver.m */; };
+		FA0A6A811BEA542400FC516E /* APNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A7F1BEA542400FC516E /* APNetworkObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A821BEA542400FC516E /* APNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A801BEA542400FC516E /* APNetworkObserver.m */; };
+		FA0A6A851BEA554700FC516E /* APNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A831BEA554700FC516E /* APNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A861BEA554700FC516E /* APNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A841BEA554700FC516E /* APNetworkOperation.m */; };
+		FA0A6A891BEA558B00FC516E /* APLocationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A871BEA558B00FC516E /* APLocationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A8A1BEA558B00FC516E /* APLocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A881BEA558B00FC516E /* APLocationOperation.m */; };
+		FA0A6A8D1BEA55B200FC516E /* APAlertOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A8B1BEA55B200FC516E /* APAlertOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A8E1BEA55B200FC516E /* APAlertOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A8C1BEA55B200FC516E /* APAlertOperation.m */; };
+		FA0A6A911BEA55E200FC516E /* APExclusivityController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A8F1BEA55E200FC516E /* APExclusivityController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A921BEA55E200FC516E /* APExclusivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A901BEA55E200FC516E /* APExclusivityController.m */; };
+		FA0A6A951BEA6E2300FC516E /* APDelayOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A931BEA6E2300FC516E /* APDelayOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A6A961BEA6E2300FC516E /* APDelayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6A941BEA6E2300FC516E /* APDelayOperation.m */; };
+		FA0A6A971BEA787000FC516E /* APOperationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A6A5E1BEA523D00FC516E /* APOperationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA1096EB1BEA7F8E00E1C5E6 /* APTimeoutObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1096E91BEA7F8E00E1C5E6 /* APTimeoutObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA1096EC1BEA7F8E00E1C5E6 /* APTimeoutObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1096EA1BEA7F8E00E1C5E6 /* APTimeoutObserver.m */; };
+		FA1096EF1BEA843500E1C5E6 /* NSError+APOperationErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1096ED1BEA843500E1C5E6 /* NSError+APOperationErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA1096F01BEA843500E1C5E6 /* NSError+APOperationErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1096EE1BEA843500E1C5E6 /* NSError+APOperationErrors.m */; };
+		FA430ABE1C0779E600D38567 /* APBackgroundObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA430ABC1C0779E600D38567 /* APBackgroundObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA430ABF1C0779E600D38567 /* APBackgroundObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA430ABD1C0779E600D38567 /* APBackgroundObserver.m */; };
+		FA73B9CD1C081F90005F2ED0 /* APBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA73B9CB1C081F90005F2ED0 /* APBlockOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA73B9CE1C081F90005F2ED0 /* APBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA73B9CC1C081F90005F2ED0 /* APBlockOperation.m */; };
+		FAAAF4701C08C6390008E8A6 /* APWaitOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF46F1C08C6390008E8A6 /* APWaitOperation.m */; };
+		FAE1BAA81C0811010033CF49 /* APOperationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE1BAA71C0811010033CF49 /* APOperationsTests.m */; };
+		FAE1BAAA1C0811010033CF49 /* APOperations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A6A381BEA4FE300FC516E /* APOperations.framework */; };
+		FAE1BAB31C0812480033CF49 /* APTestCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE1BAB21C0812480033CF49 /* APTestCondition.m */; };
+		FAE1BAB61C0813E30033CF49 /* APTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE1BAB51C0813E30033CF49 /* APTestObserver.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAE1BAAB1C0811010033CF49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA0A6A2F1BEA4FE300FC516E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA0A6A371BEA4FE300FC516E;
+			remoteInfo = APOperations;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA0A6A381BEA4FE300FC516E /* APOperations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APOperations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0A6A3B1BEA4FE300FC516E /* APOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APOperations.h; sourceTree = "<group>"; };
+		FA0A6A3D1BEA4FE300FC516E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0A6A431BEA4FF700FC516E /* APOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOperation.h; sourceTree = "<group>"; };
+		FA0A6A441BEA4FF700FC516E /* APOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOperation.m; sourceTree = "<group>"; };
+		FA0A6A4D1BEA507C00FC516E /* APOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOperationQueue.h; sourceTree = "<group>"; };
+		FA0A6A4E1BEA507C00FC516E /* APOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOperationQueue.m; sourceTree = "<group>"; };
+		FA0A6A511BEA513D00FC516E /* NSOperation+APOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperation+APOperation.h"; sourceTree = "<group>"; };
+		FA0A6A521BEA513D00FC516E /* NSOperation+APOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperation+APOperation.m"; sourceTree = "<group>"; };
+		FA0A6A551BEA516B00FC516E /* APReachabilityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APReachabilityController.h; sourceTree = "<group>"; };
+		FA0A6A561BEA516B00FC516E /* APReachabilityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APReachabilityController.m; sourceTree = "<group>"; };
+		FA0A6A591BEA51A200FC516E /* APNetworkIndicatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNetworkIndicatorController.h; sourceTree = "<group>"; };
+		FA0A6A5A1BEA51A200FC516E /* APNetworkIndicatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNetworkIndicatorController.m; sourceTree = "<group>"; };
+		FA0A6A5D1BEA51E600FC516E /* APInvalidInitializerMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APInvalidInitializerMacro.h; sourceTree = "<group>"; };
+		FA0A6A5E1BEA523D00FC516E /* APOperationCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APOperationCondition.h; sourceTree = "<group>"; };
+		FA0A6A5F1BEA525A00FC516E /* APReachabilityCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APReachabilityCondition.h; sourceTree = "<group>"; };
+		FA0A6A601BEA525A00FC516E /* APReachabilityCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APReachabilityCondition.m; sourceTree = "<group>"; };
+		FA0A6A631BEA52B600FC516E /* APMutuallyExclusiveCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMutuallyExclusiveCondition.h; sourceTree = "<group>"; };
+		FA0A6A641BEA52B600FC516E /* APMutuallyExclusiveCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMutuallyExclusiveCondition.m; sourceTree = "<group>"; };
+		FA0A6A671BEA52E500FC516E /* APLocationCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLocationCondition.h; sourceTree = "<group>"; };
+		FA0A6A681BEA52E500FC516E /* APLocationCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLocationCondition.m; sourceTree = "<group>"; };
+		FA0A6A6B1BEA531700FC516E /* APCalendarCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCalendarCondition.h; sourceTree = "<group>"; };
+		FA0A6A6C1BEA531700FC516E /* APCalendarCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCalendarCondition.m; sourceTree = "<group>"; };
+		FA0A6A6F1BEA536B00FC516E /* APGroupOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APGroupOperation.h; sourceTree = "<group>"; };
+		FA0A6A701BEA536B00FC516E /* APGroupOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APGroupOperation.m; sourceTree = "<group>"; };
+		FA0A6A731BEA53B500FC516E /* APOperationConditionEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOperationConditionEvaluator.h; sourceTree = "<group>"; };
+		FA0A6A741BEA53B500FC516E /* APOperationConditionEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOperationConditionEvaluator.m; sourceTree = "<group>"; };
+		FA0A6A771BEA53E200FC516E /* APOperationObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOperationObserver.h; sourceTree = "<group>"; };
+		FA0A6A7B1BEA53F900FC516E /* APBlockObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBlockObserver.h; sourceTree = "<group>"; };
+		FA0A6A7C1BEA53F900FC516E /* APBlockObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBlockObserver.m; sourceTree = "<group>"; };
+		FA0A6A7F1BEA542400FC516E /* APNetworkObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNetworkObserver.h; sourceTree = "<group>"; };
+		FA0A6A801BEA542400FC516E /* APNetworkObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNetworkObserver.m; sourceTree = "<group>"; };
+		FA0A6A831BEA554700FC516E /* APNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNetworkOperation.h; sourceTree = "<group>"; };
+		FA0A6A841BEA554700FC516E /* APNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNetworkOperation.m; sourceTree = "<group>"; };
+		FA0A6A871BEA558B00FC516E /* APLocationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLocationOperation.h; sourceTree = "<group>"; };
+		FA0A6A881BEA558B00FC516E /* APLocationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLocationOperation.m; sourceTree = "<group>"; };
+		FA0A6A8B1BEA55B200FC516E /* APAlertOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAlertOperation.h; sourceTree = "<group>"; };
+		FA0A6A8C1BEA55B200FC516E /* APAlertOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAlertOperation.m; sourceTree = "<group>"; };
+		FA0A6A8F1BEA55E200FC516E /* APExclusivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APExclusivityController.h; sourceTree = "<group>"; };
+		FA0A6A901BEA55E200FC516E /* APExclusivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APExclusivityController.m; sourceTree = "<group>"; };
+		FA0A6A931BEA6E2300FC516E /* APDelayOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDelayOperation.h; sourceTree = "<group>"; };
+		FA0A6A941BEA6E2300FC516E /* APDelayOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDelayOperation.m; sourceTree = "<group>"; };
+		FA1096E91BEA7F8E00E1C5E6 /* APTimeoutObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTimeoutObserver.h; sourceTree = "<group>"; };
+		FA1096EA1BEA7F8E00E1C5E6 /* APTimeoutObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTimeoutObserver.m; sourceTree = "<group>"; };
+		FA1096ED1BEA843500E1C5E6 /* NSError+APOperationErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+APOperationErrors.h"; sourceTree = "<group>"; };
+		FA1096EE1BEA843500E1C5E6 /* NSError+APOperationErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+APOperationErrors.m"; sourceTree = "<group>"; };
+		FA430ABC1C0779E600D38567 /* APBackgroundObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBackgroundObserver.h; sourceTree = "<group>"; };
+		FA430ABD1C0779E600D38567 /* APBackgroundObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBackgroundObserver.m; sourceTree = "<group>"; };
+		FA73B9CB1C081F90005F2ED0 /* APBlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBlockOperation.h; sourceTree = "<group>"; };
+		FA73B9CC1C081F90005F2ED0 /* APBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBlockOperation.m; sourceTree = "<group>"; };
+		FAAAF46E1C08C6390008E8A6 /* APWaitOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APWaitOperation.h; sourceTree = "<group>"; };
+		FAAAF46F1C08C6390008E8A6 /* APWaitOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWaitOperation.m; sourceTree = "<group>"; };
+		FAE1BAA51C0811010033CF49 /* APOperationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APOperationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE1BAA71C0811010033CF49 /* APOperationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APOperationsTests.m; sourceTree = "<group>"; };
+		FAE1BAA91C0811010033CF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE1BAB11C0812480033CF49 /* APTestCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTestCondition.h; sourceTree = "<group>"; };
+		FAE1BAB21C0812480033CF49 /* APTestCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTestCondition.m; sourceTree = "<group>"; };
+		FAE1BAB41C0813E30033CF49 /* APTestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTestObserver.h; sourceTree = "<group>"; };
+		FAE1BAB51C0813E30033CF49 /* APTestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTestObserver.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA0A6A341BEA4FE300FC516E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE1BAA21C0811010033CF49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE1BAAA1C0811010033CF49 /* APOperations.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA0A6A2E1BEA4FE300FC516E = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A3A1BEA4FE300FC516E /* APOperations */,
+				FAE1BAA61C0811010033CF49 /* APOperationsTests */,
+				FA0A6A391BEA4FE300FC516E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA0A6A391BEA4FE300FC516E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A381BEA4FE300FC516E /* APOperations.framework */,
+				FAE1BAA51C0811010033CF49 /* APOperationsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA0A6A3A1BEA4FE300FC516E /* APOperations */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A3B1BEA4FE300FC516E /* APOperations.h */,
+				FA0A6A5D1BEA51E600FC516E /* APInvalidInitializerMacro.h */,
+				FA0A6A471BEA502700FC516E /* Operation Queue */,
+				FA0A6A481BEA502F00FC516E /* Operations */,
+				FA0A6A491BEA503600FC516E /* Observers */,
+				FA0A6A4A1BEA503C00FC516E /* Conditions */,
+				FA0A6A4B1BEA504500FC516E /* Controllers */,
+				FA0A6A4C1BEA504F00FC516E /* Extensions */,
+				FAE1BAB01C08111A0033CF49 /* Supporting Files */,
+			);
+			path = APOperations;
+			sourceTree = "<group>";
+		};
+		FA0A6A471BEA502700FC516E /* Operation Queue */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A4D1BEA507C00FC516E /* APOperationQueue.h */,
+				FA0A6A4E1BEA507C00FC516E /* APOperationQueue.m */,
+				FA0A6A8F1BEA55E200FC516E /* APExclusivityController.h */,
+				FA0A6A901BEA55E200FC516E /* APExclusivityController.m */,
+			);
+			name = "Operation Queue";
+			sourceTree = "<group>";
+		};
+		FA0A6A481BEA502F00FC516E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A431BEA4FF700FC516E /* APOperation.h */,
+				FA0A6A441BEA4FF700FC516E /* APOperation.m */,
+				FA73B9CB1C081F90005F2ED0 /* APBlockOperation.h */,
+				FA73B9CC1C081F90005F2ED0 /* APBlockOperation.m */,
+				FA0A6A6F1BEA536B00FC516E /* APGroupOperation.h */,
+				FA0A6A701BEA536B00FC516E /* APGroupOperation.m */,
+				FA0A6A831BEA554700FC516E /* APNetworkOperation.h */,
+				FA0A6A841BEA554700FC516E /* APNetworkOperation.m */,
+				FA0A6A871BEA558B00FC516E /* APLocationOperation.h */,
+				FA0A6A881BEA558B00FC516E /* APLocationOperation.m */,
+				FA0A6A8B1BEA55B200FC516E /* APAlertOperation.h */,
+				FA0A6A8C1BEA55B200FC516E /* APAlertOperation.m */,
+				FA0A6A931BEA6E2300FC516E /* APDelayOperation.h */,
+				FA0A6A941BEA6E2300FC516E /* APDelayOperation.m */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		FA0A6A491BEA503600FC516E /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A771BEA53E200FC516E /* APOperationObserver.h */,
+				FA0A6A7B1BEA53F900FC516E /* APBlockObserver.h */,
+				FA0A6A7C1BEA53F900FC516E /* APBlockObserver.m */,
+				FA0A6A7F1BEA542400FC516E /* APNetworkObserver.h */,
+				FA0A6A801BEA542400FC516E /* APNetworkObserver.m */,
+				FA1096E91BEA7F8E00E1C5E6 /* APTimeoutObserver.h */,
+				FA1096EA1BEA7F8E00E1C5E6 /* APTimeoutObserver.m */,
+				FA430ABC1C0779E600D38567 /* APBackgroundObserver.h */,
+				FA430ABD1C0779E600D38567 /* APBackgroundObserver.m */,
+			);
+			name = Observers;
+			sourceTree = "<group>";
+		};
+		FA0A6A4A1BEA503C00FC516E /* Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A5E1BEA523D00FC516E /* APOperationCondition.h */,
+				FA0A6A5F1BEA525A00FC516E /* APReachabilityCondition.h */,
+				FA0A6A601BEA525A00FC516E /* APReachabilityCondition.m */,
+				FA0A6A631BEA52B600FC516E /* APMutuallyExclusiveCondition.h */,
+				FA0A6A641BEA52B600FC516E /* APMutuallyExclusiveCondition.m */,
+				FA0A6A671BEA52E500FC516E /* APLocationCondition.h */,
+				FA0A6A681BEA52E500FC516E /* APLocationCondition.m */,
+				FA0A6A6B1BEA531700FC516E /* APCalendarCondition.h */,
+				FA0A6A6C1BEA531700FC516E /* APCalendarCondition.m */,
+				FA0A6A731BEA53B500FC516E /* APOperationConditionEvaluator.h */,
+				FA0A6A741BEA53B500FC516E /* APOperationConditionEvaluator.m */,
+			);
+			name = Conditions;
+			sourceTree = "<group>";
+		};
+		FA0A6A4B1BEA504500FC516E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A551BEA516B00FC516E /* APReachabilityController.h */,
+				FA0A6A561BEA516B00FC516E /* APReachabilityController.m */,
+				FA0A6A591BEA51A200FC516E /* APNetworkIndicatorController.h */,
+				FA0A6A5A1BEA51A200FC516E /* APNetworkIndicatorController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FA0A6A4C1BEA504F00FC516E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A511BEA513D00FC516E /* NSOperation+APOperation.h */,
+				FA0A6A521BEA513D00FC516E /* NSOperation+APOperation.m */,
+				FA1096ED1BEA843500E1C5E6 /* NSError+APOperationErrors.h */,
+				FA1096EE1BEA843500E1C5E6 /* NSError+APOperationErrors.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FAE1BAA61C0811010033CF49 /* APOperationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1BAA71C0811010033CF49 /* APOperationsTests.m */,
+				FAE1BAB11C0812480033CF49 /* APTestCondition.h */,
+				FAE1BAB21C0812480033CF49 /* APTestCondition.m */,
+				FAE1BAB41C0813E30033CF49 /* APTestObserver.h */,
+				FAE1BAB51C0813E30033CF49 /* APTestObserver.m */,
+				FAAAF46E1C08C6390008E8A6 /* APWaitOperation.h */,
+				FAAAF46F1C08C6390008E8A6 /* APWaitOperation.m */,
+				FAE1BAA91C0811010033CF49 /* Info.plist */,
+			);
+			path = APOperationsTests;
+			sourceTree = "<group>";
+		};
+		FAE1BAB01C08111A0033CF49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6A3D1BEA4FE300FC516E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA0A6A351BEA4FE300FC516E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0A6A791BEA53E200FC516E /* APOperationObserver.h in Headers */,
+				FA0A6A7D1BEA53F900FC516E /* APBlockObserver.h in Headers */,
+				FA0A6A3C1BEA4FE300FC516E /* APOperations.h in Headers */,
+				FA0A6A651BEA52B600FC516E /* APMutuallyExclusiveCondition.h in Headers */,
+				FA0A6A8D1BEA55B200FC516E /* APAlertOperation.h in Headers */,
+				FA0A6A951BEA6E2300FC516E /* APDelayOperation.h in Headers */,
+				FA0A6A611BEA525A00FC516E /* APReachabilityCondition.h in Headers */,
+				FA0A6A711BEA536B00FC516E /* APGroupOperation.h in Headers */,
+				FA0A6A4F1BEA507C00FC516E /* APOperationQueue.h in Headers */,
+				FA0A6A751BEA53B500FC516E /* APOperationConditionEvaluator.h in Headers */,
+				FA0A6A891BEA558B00FC516E /* APLocationOperation.h in Headers */,
+				FA73B9CD1C081F90005F2ED0 /* APBlockOperation.h in Headers */,
+				FA0A6A691BEA52E500FC516E /* APLocationCondition.h in Headers */,
+				FA0A6A5B1BEA51A200FC516E /* APNetworkIndicatorController.h in Headers */,
+				FA430ABE1C0779E600D38567 /* APBackgroundObserver.h in Headers */,
+				FA1096EB1BEA7F8E00E1C5E6 /* APTimeoutObserver.h in Headers */,
+				FA0A6A571BEA516B00FC516E /* APReachabilityController.h in Headers */,
+				FA0A6A811BEA542400FC516E /* APNetworkObserver.h in Headers */,
+				FA0A6A531BEA513D00FC516E /* NSOperation+APOperation.h in Headers */,
+				FA0A6A851BEA554700FC516E /* APNetworkOperation.h in Headers */,
+				FA0A6A451BEA4FF700FC516E /* APOperation.h in Headers */,
+				FA0A6A6D1BEA531700FC516E /* APCalendarCondition.h in Headers */,
+				FA0A6A911BEA55E200FC516E /* APExclusivityController.h in Headers */,
+				FA1096EF1BEA843500E1C5E6 /* NSError+APOperationErrors.h in Headers */,
+				FA0A6A971BEA787000FC516E /* APOperationCondition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FA0A6A371BEA4FE300FC516E /* APOperations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA0A6A401BEA4FE300FC516E /* Build configuration list for PBXNativeTarget "APOperations" */;
+			buildPhases = (
+				FA0A6A331BEA4FE300FC516E /* Sources */,
+				FA0A6A341BEA4FE300FC516E /* Frameworks */,
+				FA0A6A351BEA4FE300FC516E /* Headers */,
+				FA0A6A361BEA4FE300FC516E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APOperations;
+			productName = APOperations;
+			productReference = FA0A6A381BEA4FE300FC516E /* APOperations.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAE1BAA41C0811010033CF49 /* APOperationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE1BAAD1C0811010033CF49 /* Build configuration list for PBXNativeTarget "APOperationsTests" */;
+			buildPhases = (
+				FAE1BAA11C0811010033CF49 /* Sources */,
+				FAE1BAA21C0811010033CF49 /* Frameworks */,
+				FAE1BAA31C0811010033CF49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE1BAAC1C0811010033CF49 /* PBXTargetDependency */,
+			);
+			name = APOperationsTests;
+			productName = APOperationsTests;
+			productReference = FAE1BAA51C0811010033CF49 /* APOperationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA0A6A2F1BEA4FE300FC516E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AP;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Alex Perez";
+				TargetAttributes = {
+					FA0A6A371BEA4FE300FC516E = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					FA430AC01C077EF000D38567 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					FAE1BAA41C0811010033CF49 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = FA0A6A321BEA4FE300FC516E /* Build configuration list for PBXProject "APOperations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA0A6A2E1BEA4FE300FC516E;
+			productRefGroup = FA0A6A391BEA4FE300FC516E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA0A6A371BEA4FE300FC516E /* APOperations */,
+				FA430AC01C077EF000D38567 /* APOperations-Universal */,
+				FAE1BAA41C0811010033CF49 /* APOperationsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA0A6A361BEA4FE300FC516E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE1BAA31C0811010033CF49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA430AC41C077EFA00D38567 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_NAME=\"APOperations\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Framework for device and simulator\n######################\n\nxcodebuild -target ${FRAMEWORK_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator CONFIGURATION_TEMP_DIR=${BUILD_DIR}/../Intermediates ONLY_ACTIVE_ARCH=NO\n\nxcodebuild -target ${FRAMEWORK_NAME} -configuration ${CONFIGURATION} -sdk iphoneos clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos CONFIGURATION_TEMP_DIR=${BUILD_DIR}/../Intermediates ONLY_ACTIVE_ARCH=NO\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\nmkdir \"${FRAMEWORK}\"\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n######################\n# Copy framework to Georgia Tech Directory\n######################\n\nOUTPUT_DIR=\"/Users/Alex/Alex's Docs/Xcode/Alex Projects/Georgia Tech Project/GeorgiaTech/\"\nmkdir -p \"$OUTPUT_DIR\"\ncp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n\n######################\n# Delete intermediates build directory\n######################\n\nrm -rf ${SRCROOT}/build";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA0A6A331BEA4FE300FC516E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0A6A961BEA6E2300FC516E /* APDelayOperation.m in Sources */,
+				FA0A6A921BEA55E200FC516E /* APExclusivityController.m in Sources */,
+				FA73B9CE1C081F90005F2ED0 /* APBlockOperation.m in Sources */,
+				FA0A6A861BEA554700FC516E /* APNetworkOperation.m in Sources */,
+				FA0A6A5C1BEA51A200FC516E /* APNetworkIndicatorController.m in Sources */,
+				FA0A6A6A1BEA52E500FC516E /* APLocationCondition.m in Sources */,
+				FA0A6A761BEA53B500FC516E /* APOperationConditionEvaluator.m in Sources */,
+				FA0A6A621BEA525A00FC516E /* APReachabilityCondition.m in Sources */,
+				FA1096EC1BEA7F8E00E1C5E6 /* APTimeoutObserver.m in Sources */,
+				FA0A6A541BEA513D00FC516E /* NSOperation+APOperation.m in Sources */,
+				FA1096F01BEA843500E1C5E6 /* NSError+APOperationErrors.m in Sources */,
+				FA0A6A6E1BEA531700FC516E /* APCalendarCondition.m in Sources */,
+				FA0A6A8E1BEA55B200FC516E /* APAlertOperation.m in Sources */,
+				FA0A6A821BEA542400FC516E /* APNetworkObserver.m in Sources */,
+				FA0A6A661BEA52B600FC516E /* APMutuallyExclusiveCondition.m in Sources */,
+				FA430ABF1C0779E600D38567 /* APBackgroundObserver.m in Sources */,
+				FA0A6A721BEA536B00FC516E /* APGroupOperation.m in Sources */,
+				FA0A6A7E1BEA53F900FC516E /* APBlockObserver.m in Sources */,
+				FA0A6A8A1BEA558B00FC516E /* APLocationOperation.m in Sources */,
+				FA0A6A501BEA507C00FC516E /* APOperationQueue.m in Sources */,
+				FA0A6A461BEA4FF700FC516E /* APOperation.m in Sources */,
+				FA0A6A581BEA516B00FC516E /* APReachabilityController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE1BAA11C0811010033CF49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE1BAB61C0813E30033CF49 /* APTestObserver.m in Sources */,
+				FAE1BAB31C0812480033CF49 /* APTestCondition.m in Sources */,
+				FAE1BAA81C0811010033CF49 /* APOperationsTests.m in Sources */,
+				FAAAF4701C08C6390008E8A6 /* APWaitOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAE1BAAC1C0811010033CF49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA0A6A371BEA4FE300FC516E /* APOperations */;
+			targetProxy = FAE1BAAB1C0811010033CF49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA0A6A3E1BEA4FE300FC516E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA0A6A3F1BEA4FE300FC516E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA0A6A411BEA4FE300FC516E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APOperations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexperez.APOperations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA0A6A421BEA4FE300FC516E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APOperations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexperez.APOperations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FA430AC21C077EF000D38567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA430AC31C077EF000D38567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAE1BAAE1C0811010033CF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = APOperationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexperez.APOperationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAE1BAAF1C0811010033CF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = APOperationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexperez.APOperationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA0A6A321BEA4FE300FC516E /* Build configuration list for PBXProject "APOperations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0A6A3E1BEA4FE300FC516E /* Debug */,
+				FA0A6A3F1BEA4FE300FC516E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0A6A401BEA4FE300FC516E /* Build configuration list for PBXNativeTarget "APOperations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0A6A411BEA4FE300FC516E /* Debug */,
+				FA0A6A421BEA4FE300FC516E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA430AC11C077EF000D38567 /* Build configuration list for PBXAggregateTarget "APOperations-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA430AC21C077EF000D38567 /* Debug */,
+				FA430AC31C077EF000D38567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE1BAAD1C0811010033CF49 /* Build configuration list for PBXNativeTarget "APOperationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE1BAAE1C0811010033CF49 /* Debug */,
+				FAE1BAAF1C0811010033CF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA0A6A2F1BEA4FE300FC516E /* Project object */;
+}
