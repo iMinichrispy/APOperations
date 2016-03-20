@@ -294,7 +294,12 @@ typedef NS_ENUM(NSInteger, APOperationState) {
 }
 
 - (void)_evaluateConditions {
-    NSAssert(self.state == APOperationStatePending && !self.cancelled, @"evaluateConditions: was called out-of-order");
+    if (self.cancelled) {
+        self.state = APOperationStateReady;
+        return;
+    }
+    
+    NSAssert(self.state == APOperationStatePending, @"evaluateConditions: was called out-of-order");
     self.state = APOperationStateEvaluatingConditions;
     
     if (!_conditions.count) {
