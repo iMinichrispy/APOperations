@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface APGroupOperation : APOperation
 
-- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithOperatons:(NSArray<NSOperation *> *)operations NS_DESIGNATED_INITIALIZER;
 - (void)addOperation:(NSOperation *)operation;
 - (void)aggregateError:(NSError *)error;
