@@ -24,7 +24,9 @@
 
 #pragma mark - Initialization
 
-AP_INVALID_INITIALIZER(init);
+- (instancetype)init {
+    return [self initWithOperatons:@[]];
+}
 
 - (instancetype)initWithOperatons:(NSArray<NSOperation *> *)operations {
     self = [super init];
