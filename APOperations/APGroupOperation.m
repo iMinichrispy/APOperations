@@ -93,7 +93,9 @@
 }
 
 - (void)operationQueue:(APOperationQueue *)operationQueue operationDidFinish:(NSOperation *)operation withErrors:(nullable NSArray<NSError *> *)errors {
-    [_aggregatedErrors addObjectsFromArray:errors];
+    if (errors) {
+        [_aggregatedErrors addObjectsFromArray:errors];
+    }
     
     if (operation == _finishingOperation) {
         _internalQueue.suspended = YES;

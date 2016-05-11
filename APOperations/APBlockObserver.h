@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^APBlockObserverStartHandler)(APOperation *operation);
 typedef void(^APBlockObserverCancelHandler)(APOperation *operation);
 typedef void(^APBlockObserverProduceHandler)(APOperation *operation, NSOperation *newOperation);
-typedef void(^APBlockObserverFinishHandler)(APOperation *operation, NSArray<NSError *> *errors);
+typedef void(^APBlockObserverFinishHandler)(APOperation *operation, NSArray<NSError *> * _Nullable errors);
 
 @class APOperation;
 

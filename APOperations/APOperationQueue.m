@@ -24,7 +24,7 @@
         __weak typeof(self) weakSelf = self;
         APBlockObserver *delegateObserver = [[APBlockObserver alloc] initWithStartHandler:NULL cancelHandler:NULL produceHandler:^(APOperation *existingOperation, NSOperation *newOperation) {
             [weakSelf addOperation:newOperation];
-        } finishHandler:^(APOperation *finishedOperation, NSArray<NSError *> *errors) {
+        } finishHandler:^(APOperation *finishedOperation, NSArray<NSError *> * _Nullable errors) {
             if ([_delegate respondsToSelector:@selector(operationQueue:operationDidFinish:withErrors:)]) {
                 [_delegate operationQueue:weakSelf operationDidFinish:finishedOperation withErrors:errors];
             }
@@ -74,7 +74,7 @@
         [operation ap_addCompletionBlock:^{
             if (weakSelf && weakOperation) {
                 if ([weakSelf.delegate respondsToSelector:@selector(operationQueue:operationDidFinish:withErrors:)]) {
-                    [weakSelf.delegate operationQueue:weakSelf operationDidFinish:weakOperation withErrors:@[]];
+                    [weakSelf.delegate operationQueue:weakSelf operationDidFinish:weakOperation withErrors:nil];
                 }
             }
         }];
