@@ -44,7 +44,8 @@ AP_INVALID_INITIALIZER(init);
             if (!error && !data.length) {
                 NSHTTPURLResponse *httpURLResponse = (NSHTTPURLResponse *)response;
                 if (![httpURLResponse ap_isStatusCodeAcceptable]) {
-                    error = [NSError errorWithDomain:NSURLErrorDomain code:httpURLResponse.statusCode userInfo:nil];
+                    NSDictionary<NSString *, id> *userInfo = (_request.URL) ? @{NSURLErrorFailingURLStringErrorKey: _request.URL} : nil;
+                    error = [NSError errorWithDomain:NSURLErrorDomain code:httpURLResponse.statusCode userInfo:userInfo];
                 }
             }
             
