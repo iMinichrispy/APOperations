@@ -112,7 +112,7 @@ AP_INVALID_INITIALIZER(init);
             [self _requestPermission];
         });
     } else {
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
     }
 }
 
@@ -138,7 +138,7 @@ AP_INVALID_INITIALIZER(init);
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
     if (manager == _manager && self.isExecuting && status != kCLAuthorizationStatusNotDetermined) {
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
     }
 }
 

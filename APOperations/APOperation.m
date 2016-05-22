@@ -113,7 +113,7 @@ typedef NS_ENUM(NSInteger, APOperationState) {
 #pragma mark - Public
 
 - (void)execute {
-    [self finishWithErrors:nil];
+    [self finishWithError:nil];
     // To be implemented by subclasses
 }
 
@@ -150,6 +150,11 @@ typedef NS_ENUM(NSInteger, APOperationState) {
             [observer operation:self didProduceOperation:operation];
         }
     }
+}
+
+- (void)finishWithError:(nullable NSError *)error {
+    NSArray<NSError *> *errors = (error != nil) ? @[error] : nil;
+    [self finishWithErrors:errors];
 }
 
 - (void)finishWithErrors:(nullable NSArray<NSError *> *)errors {
@@ -229,7 +234,7 @@ typedef NS_ENUM(NSInteger, APOperationState) {
     
     // If the operation has been cancelled, we still need to enter the "Finished" state
     if (self.cancelled) {
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
     }
 }
 
@@ -247,7 +252,7 @@ typedef NS_ENUM(NSInteger, APOperationState) {
         
         [self execute];
     } else {
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
     }
 }
 
@@ -259,7 +264,7 @@ typedef NS_ENUM(NSInteger, APOperationState) {
     self.cancelledState = YES;
     
     if (self.state > APOperationStateReady) {
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
     }
 }
 

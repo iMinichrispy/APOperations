@@ -47,9 +47,9 @@ AP_INVALID_INITIALIZER(init);
         _block(^{
             // TODO: What goes here?
         });
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
     } else {
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
     }
 }
 

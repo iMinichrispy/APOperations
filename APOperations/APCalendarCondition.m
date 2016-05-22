@@ -91,11 +91,11 @@ AP_INVALID_INITIALIZER(init);
     if (authorizationStatus == EKAuthorizationStatusNotDetermined) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [[self _sharedEventStore] requestAccessToEntityType:_entityType completion:^(BOOL granted, NSError * _Nullable error) {
-                [self finishWithErrors:nil];
+                [self finishWithError:nil];
             }];
         });
     } else {
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
     }
 }
 

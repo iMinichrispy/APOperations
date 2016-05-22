@@ -55,6 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @discussion `APOperation` subclasses must call this method at the end of their execution
  * @param errors, the errors that occured during the operation's execution
  */
+- (void)finishWithError:(nullable NSError *)error;
 - (void)finishWithErrors:(nullable NSArray<NSError *> *)errors;
 
 /*!

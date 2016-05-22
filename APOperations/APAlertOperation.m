@@ -42,7 +42,7 @@
 
 - (void)execute {
     if (!_presentationContext) {
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
         return;
     }
     
@@ -84,7 +84,7 @@
             completion(weakSelf);
         }
         
-        [weakSelf finishWithErrors:nil];
+        [weakSelf finishWithError:nil];
     }];
     
     [_alertController addAction:alertAction];
