@@ -86,7 +86,7 @@ AP_INVALID_INITIALIZER(init);
         _completion(lastLocation);
     }
     
-    [self finishWithErrors:nil];
+    [self finishWithError:nil];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
@@ -94,7 +94,7 @@ AP_INVALID_INITIALIZER(init);
     if (_completion) {
         _completion(nil);
     }
-    [self finishWithErrors:@[error]];
+    [self finishWithError:error];
 }
 
 @end

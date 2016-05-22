@@ -53,11 +53,7 @@ AP_INVALID_INITIALIZER(init);
                 _completion(data, error);
             }
             
-            if (error) {
-                [self finishWithErrors:@[error]];
-            } else {
-                [self finishWithErrors:nil];
-            }
+            [self finishWithError:error];
         }];
         _task = task;
     }

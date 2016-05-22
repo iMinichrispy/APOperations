@@ -44,7 +44,7 @@ typedef NS_ENUM(NSInteger, APDelayOperationType) {
 - (void)cancel {
     [super cancel];
     // Cancelling the operation means we don't want to wait anymore.
-    [self finishWithErrors:nil];
+    [self finishWithError:nil];
 }
 
 #pragma mark - APOperation
@@ -59,7 +59,7 @@ typedef NS_ENUM(NSInteger, APDelayOperationType) {
     }
     
     if (interval <= 0) {
-        [self finishWithErrors:nil];
+        [self finishWithError:nil];
         return;
     }
     
@@ -67,7 +67,7 @@ typedef NS_ENUM(NSInteger, APDelayOperationType) {
     dispatch_after(when, dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0), ^{
         // If we were cancelled, then finish() has already been called.
         if (!self.cancelled) {
-            [self finishWithErrors:nil];
+            [self finishWithError:nil];
         }
     });
 }
