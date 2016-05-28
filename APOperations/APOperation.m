@@ -366,6 +366,9 @@ typedef NS_ENUM(NSInteger, APOperationState) {
 #pragma mark - NSObject
 
 - (NSString *)description {
+    if (self.name) {
+        return [NSString stringWithFormat:@"<%@ state: %@, name: %@>", NSStringFromClass([self class]), [self _stringForState], self.name];
+    }
     return [NSString stringWithFormat:@"<%@ state: %@>", NSStringFromClass([self class]), [self _stringForState]];
 }
 
