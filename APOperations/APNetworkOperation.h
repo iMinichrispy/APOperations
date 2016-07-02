@@ -22,7 +22,7 @@ typedef void(^APNeworkOperationCompletionHandler)(NSData * _Nullable data, NSErr
 - (instancetype)initWithRequest:(NSURLRequest *)request NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, copy) APNeworkOperationCompletionHandler completion;
-@property (nonatomic, copy, readonly)  NSURLRequest *request;
+@property (nonatomic, copy, readonly) NSURLRequest *request;
 @property (nonatomic, assign) BOOL showsNetworkActivityIndicator;
 
 @end
