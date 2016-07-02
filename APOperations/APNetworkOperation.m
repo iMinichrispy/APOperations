@@ -40,10 +40,10 @@ AP_INVALID_INITIALIZER(init);
         _request = [request copy];
         
         NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:_request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            
-            if (!error && !data.length) {
+            if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
                 NSHTTPURLResponse *httpURLResponse = (NSHTTPURLResponse *)response;
-                if (![httpURLResponse ap_isStatusCodeAcceptable]) {
+                if (!error && ![httpURLResponse ap_isStatusCodeAcceptable]) {
+                    // There's no error but the status code doesn't fall in the acceptable range
                     NSDictionary<NSString *, id> *userInfo = (_request.URL) ? @{NSURLErrorFailingURLStringErrorKey: _request.URL} : nil;
                     error = [NSError errorWithDomain:NSURLErrorDomain code:httpURLResponse.statusCode userInfo:userInfo];
                 }
