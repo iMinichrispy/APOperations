@@ -51,7 +51,7 @@ typedef NS_ENUM(NSInteger, APDelayOperationType) {
 
 - (void)execute {
     // Figure out how long we should wait for
-    NSTimeInterval interval;
+    NSTimeInterval interval = 0;
     if (_type == APDelayOperationTypeTimeInterval) {
         interval = _interval;
     } else if (_type == APDelayOperationTypeUntilDate) {
