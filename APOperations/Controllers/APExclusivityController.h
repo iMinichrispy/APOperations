@@ -26,15 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract Registers an operation as being mutually exclusive
- * @param operation, the `APOperation` to add
- * @param categories, an array of `APOperationCondition` class name strings
+ * @param operation The `APOperation` to add
+ * @param categories An array of `APOperationCondition` class name strings
  */
 - (void)addOperation:(APOperation *)operation categories:(NSArray<NSString *> *)categories;
 
 /*!
  * @abstract Unregisters an operation from being mutually exclusive
- * @param operation, the operation to remove
- * @param categories, an array of `APOperationCondition` class name strings
+ * @param operation The operation to remove
+ * @param categories An array of `APOperationCondition` class name strings
  */
 - (void)removeOperation:(APOperation *)operation categories:(NSArray<NSString *> *)categories;
 

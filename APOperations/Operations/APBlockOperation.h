@@ -25,7 +25,7 @@ typedef void(^APBlockOperationBlock)(APBlockOperationContinuation continuation);
  * @abstract The designated initializer
  * @discussion The block *must* be invoked by your code or else the `APBlockOperation` will never finish executing
  * @note If the block parameter is `nil`, the operation will immediately finish
- * @param block, the block to run when the operation executes
+ * @param block The block to run when the operation executes
  */
 + (instancetype)blockOperationWithBlock:(APBlockOperationBlock)block;
 
@@ -33,7 +33,7 @@ typedef void(^APBlockOperationBlock)(APBlockOperationContinuation continuation);
  * @abstract A convenience initializer to execute a block on the main queue
  * @discussion The operation will automatically be ended after `mainQueueBlock` is executed
  * @note The mainQueueBlock does not have a "continuation" block to execute (unlike the designated initializer)
- * @param mainQueueBlock, the block to execute on the main queue
+ * @param mainQueueBlock The block to execute on the main queue
  */
 + (instancetype)mainQueueBlock:(dispatch_block_t)mainQueueBlock;
 

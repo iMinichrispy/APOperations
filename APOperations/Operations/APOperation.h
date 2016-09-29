@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract Appends the errors to the operation's internal errors and cancels the operation
- * @param errors, the errors causing the operation to cancel
+ * @param errors The errors causing the operation to cancel
  */
 - (void)cancelWithErrors:(nullable NSArray<NSError *> *)errors;
 
@@ -46,14 +46,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract Indicates the operation has produced a new operation
- * @param operation, the operation that was produced
+ * @param operation The operation that was produced
  */
 - (void)produceOperation:(NSOperation *)operation;
 
 /*!
  * @abstract Indicates that the operation has finished execution and is ready for teardown
  * @discussion `APOperation` subclasses must call this method at the end of their execution
- * @param errors, the errors that occured during the operation's execution
+ * @param error The error (or errors) that occured during the operation's execution
  */
 - (void)finishWithError:(nullable NSError *)error;
 - (void)finishWithErrors:(nullable NSArray<NSError *> *)errors;
@@ -61,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @abstract Called after an operation has finished executing
  * @discussion `APOperation` subclasses may override this method if they wish to react to the operation finishing with errors
- * @param errors, the errors that occured during the operation's execution
+ * @param errors The errors that occured during the operation's execution
  */
 - (void)finishedWithErrors:(nullable NSArray<NSError *> *)errors;
 
