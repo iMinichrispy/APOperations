@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @class APOperationQueue
  * @abstract A subclass of `NSOperationQueue` that implements a number of extra features related to the `APOperation` class
- * @discussion Features include: notifying a delegate of all operation completion, extracting generated dependencies from operation conditions, setting up dependencies to enfore mutual exclusivity
+ * @discussion Features include: notifying a delegate of all operation completion, extracting generated dependencies from operation conditions, setting up dependencies to enforce mutual exclusivity
  */
 @interface APOperationQueue : NSOperationQueue
 
