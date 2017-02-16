@@ -17,7 +17,6 @@
 @import Foundation;
 
 #import <APOperations/APOperationQueue.h>
-#import <APOperations/APExclusivityController.h>
 
 #import <APOperations/APOperation.h>
 #import <APOperations/APAlertOperation.h>
@@ -42,6 +41,7 @@
 #import <APOperations/APOperationConditionEvaluator.h>
 #import <APOperations/APReachabilityCondition.h>
 
+#import <APOperations/APExclusivityController.h>
 #import <APOperations/APNetworkIndicatorController.h>
 #import <APOperations/APReachabilityController.h>
 
