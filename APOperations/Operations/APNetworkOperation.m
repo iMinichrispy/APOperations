@@ -8,7 +8,6 @@
 
 #import "APNetworkOperation.h"
 
-#import "APInvalidInitializerMacro.h"
 #import "APReachabilityCondition.h"
 #import "APNetworkObserver.h"
 
@@ -31,8 +30,6 @@
 @implementation APNetworkOperation {
     NSURLSessionTask *_task;
 }
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithRequest:(NSURLRequest *)request {
     self = [super init];

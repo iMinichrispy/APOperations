@@ -9,7 +9,6 @@
 #import "APReachabilityCondition.h"
 
 #import "APReachabilityController.h"
-#import "APInvalidInitializerMacro.h"
 #import "NSError+APOperationErrors.h"
 
 static NSString *const APReachabilityConditionHostKey = @"Host";
@@ -17,8 +16,6 @@ static NSString *const APReachabilityConditionHostKey = @"Host";
 @implementation APReachabilityCondition
 
 #pragma mark - Initializers
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithHost:(NSURL *)host {
     self = [super init];

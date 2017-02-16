@@ -29,7 +29,6 @@
 		FA436DB51D6B960700D0E172 /* NSError+APOperationErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DB11D6B960700D0E172 /* NSError+APOperationErrors.m */; };
 		FA436DB61D6B960700D0E172 /* NSOperation+APOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB21D6B960700D0E172 /* NSOperation+APOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DB71D6B960700D0E172 /* NSOperation+APOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DB31D6B960700D0E172 /* NSOperation+APOperation.m */; };
-		FA436DE91D6B963400D0E172 /* APInvalidInitializerMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB81D6B963400D0E172 /* APInvalidInitializerMacro.h */; };
 		FA436DEA1D6B963400D0E172 /* APOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB91D6B963400D0E172 /* APOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DEB1D6B963400D0E172 /* APCalendarCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DBB1D6B963400D0E172 /* APCalendarCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DEC1D6B963400D0E172 /* APCalendarCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DBC1D6B963400D0E172 /* APCalendarCondition.m */; };
@@ -101,7 +100,6 @@
 		FA436DB11D6B960700D0E172 /* NSError+APOperationErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+APOperationErrors.m"; sourceTree = "<group>"; };
 		FA436DB21D6B960700D0E172 /* NSOperation+APOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperation+APOperation.h"; sourceTree = "<group>"; };
 		FA436DB31D6B960700D0E172 /* NSOperation+APOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperation+APOperation.m"; sourceTree = "<group>"; };
-		FA436DB81D6B963400D0E172 /* APInvalidInitializerMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APInvalidInitializerMacro.h; sourceTree = "<group>"; };
 		FA436DB91D6B963400D0E172 /* APOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOperations.h; sourceTree = "<group>"; };
 		FA436DBB1D6B963400D0E172 /* APCalendarCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCalendarCondition.h; sourceTree = "<group>"; };
 		FA436DBC1D6B963400D0E172 /* APCalendarCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCalendarCondition.m; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				FA436DB91D6B963400D0E172 /* APOperations.h */,
-				FA436DB81D6B963400D0E172 /* APInvalidInitializerMacro.h */,
 				FA436DD71D6B963400D0E172 /* Operation Queue */,
 				FA436DDA1D6B963400D0E172 /* Operations */,
 				FA436DBA1D6B963400D0E172 /* Conditions */,
@@ -340,7 +337,6 @@
 				FA436DB61D6B960700D0E172 /* NSOperation+APOperation.h in Headers */,
 				FA436E091D6B963400D0E172 /* APBlockOperation.h in Headers */,
 				FA436E021D6B963400D0E172 /* APOperationObserver.h in Headers */,
-				FA436DE91D6B963400D0E172 /* APInvalidInitializerMacro.h in Headers */,
 				FA436DF11D6B963400D0E172 /* APOperationCondition.h in Headers */,
 				FA436E051D6B963400D0E172 /* APOperationQueue.h in Headers */,
 				FA436DED1D6B963400D0E172 /* APLocationCondition.h in Headers */,

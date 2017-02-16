@@ -12,7 +12,6 @@
 
 #import "APOperation.h"
 #import "APMutuallyExclusiveCondition.h"
-#import "APInvalidInitializerMacro.h"
 #import "NSError+APOperationErrors.h"
 
 static NSString *const APLocationServicesEnabledKey = @"CLLocationServicesEnabled";
@@ -30,8 +29,6 @@ static NSString *const APLocationAuthorizationStatusKey = @"CLAuthorizationStatu
 @implementation APLocationCondition
 
 #pragma mark - Initialization
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithAuthorization:(APLocationAuthorization)authorization {
     self = [super init];
@@ -87,8 +84,6 @@ AP_INVALID_INITIALIZER(init);
 }
 
 #pragma mark - Initialization
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithAuthorization:(APLocationAuthorization)authorization {
     self = [super init];

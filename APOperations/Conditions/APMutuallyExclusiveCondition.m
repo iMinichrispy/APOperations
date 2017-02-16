@@ -8,8 +8,6 @@
 
 #import "APMutuallyExclusiveCondition.h"
 
-#import "APInvalidInitializerMacro.h"
-
 @interface APMutuallyExclusiveCondition ()
 
 @property (nonatomic, strong, nonnull) NSString *type;

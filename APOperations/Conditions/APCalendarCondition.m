@@ -9,9 +9,7 @@
 #import "APCalendarCondition.h"
 
 #import "APOperation.h"
-#import "APInvalidInitializerMacro.h"
 #import "APMutuallyExclusiveCondition.h"
-#import "APInvalidInitializerMacro.h"
 #import "NSError+APOperationErrors.h"
 
 static NSString *const APCalendarConditionEKEntityTypeKey = @"EKEntityType";
@@ -28,8 +26,6 @@ static NSString *const APCalendarConditionEKEntityTypeKey = @"EKEntityType";
 @implementation APCalendarCondition
 
 #pragma mark - Initialization
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithEntityType:(EKEntityType)entityType {
     self = [super init];
@@ -70,8 +66,6 @@ AP_INVALID_INITIALIZER(init);
 @implementation APCalendarPermissionOperation
 
 #pragma mark - Initialization
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithEntityType:(EKEntityType)entityType {
     self = [super init];

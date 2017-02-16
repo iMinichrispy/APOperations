@@ -8,13 +8,9 @@
 
 #import "APBlockOperation.h"
 
-#import "APInvalidInitializerMacro.h"
-
 @implementation APBlockOperation {
     APBlockOperationBlock _block;
 }
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithBlock:(APBlockOperationBlock)block {
     self = [super init];

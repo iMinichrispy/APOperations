@@ -9,7 +9,6 @@
 #import "APTimeoutObserver.h"
 
 #import "APOperation.h"
-#import "APInvalidInitializerMacro.h"
 #import "NSError+APOperationErrors.h"
 
 static NSString *const APTimeoutObserverKey = @"Timeout";
@@ -19,8 +18,6 @@ static NSString *const APTimeoutObserverKey = @"Timeout";
 }
 
 #pragma mark - Initialization
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithTimeout:(NSTimeInterval)timeout {
     self = [super init];

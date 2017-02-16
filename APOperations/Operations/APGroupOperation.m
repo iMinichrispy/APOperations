@@ -9,7 +9,6 @@
 #import "APGroupOperation.h"
 
 #import "APOperationQueue.h"
-#import "APInvalidInitializerMacro.h"
 
 @interface APGroupOperation () <APOperationQueueDelegate>
 

@@ -9,7 +9,6 @@
 #import "APLocationOperation.h"
 
 #import "APMutuallyExclusiveCondition.h"
-#import "APInvalidInitializerMacro.h"
 #import "APLocationCondition.h"
 
 @interface APLocationOperation () <CLLocationManagerDelegate>
@@ -23,8 +22,6 @@
 }
 
 #pragma mark - Initialization
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithAccuracy:(CLLocationAccuracy)accuracy completion:(APLocationOperationCompletionHandler)completion {
     self = [super init];

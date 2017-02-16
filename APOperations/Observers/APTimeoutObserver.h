@@ -14,6 +14,7 @@
  */
 @interface APTimeoutObserver : NSObject <APOperationObserver>
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithTimeout:(NSTimeInterval)timeout NS_DESIGNATED_INITIALIZER;
 
 @end

@@ -8,10 +8,9 @@
 
 #import "APNetworkIndicatorController.h"
 
-#import "APInvalidInitializerMacro.h"
-
 @interface APTimer : NSObject
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithInterval:(NSTimeInterval)interval handler:(dispatch_block_t)handler NS_DESIGNATED_INITIALIZER;
 - (void)cancel;
 
@@ -20,8 +19,6 @@
 @implementation APTimer {
     BOOL _isCancelled;
 }
-
-AP_INVALID_INITIALIZER(init);
 
 - (instancetype)initWithInterval:(NSTimeInterval)interval handler:(dispatch_block_t)handler {
     self = [super init];
