@@ -26,6 +26,8 @@
 #import <APOperations/APGroupOperation.h>
 #import <APOperations/APLocationOperation.h>
 #import <APOperations/APNetworkOperation.h>
+#import <APOperations/APReadFileOperation.h>
+#import <APOperations/APWriteFileOperation.h>
 
 #import <APOperations/APBackgroundObserver.h>
 #import <APOperations/APBlockObserver.h>

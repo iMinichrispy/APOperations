@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		FA41A9C41E5567A9002E8093 /* APReadFileOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41A9C01E5567A9002E8093 /* APReadFileOperation.h */; };
+		FA41A9C51E5567A9002E8093 /* APReadFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA41A9C11E5567A9002E8093 /* APReadFileOperation.m */; };
+		FA41A9C61E5567A9002E8093 /* APWriteFileOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41A9C21E5567A9002E8093 /* APWriteFileOperation.h */; };
+		FA41A9C71E5567A9002E8093 /* APWriteFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA41A9C31E5567A9002E8093 /* APWriteFileOperation.m */; };
 		FA436DB41D6B960700D0E172 /* NSError+APOperationErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB01D6B960700D0E172 /* NSError+APOperationErrors.h */; };
 		FA436DB51D6B960700D0E172 /* NSError+APOperationErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DB11D6B960700D0E172 /* NSError+APOperationErrors.m */; };
 		FA436DB61D6B960700D0E172 /* NSOperation+APOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB21D6B960700D0E172 /* NSOperation+APOperation.h */; };
@@ -89,6 +93,10 @@
 /* Begin PBXFileReference section */
 		FA0A6A381BEA4FE300FC516E /* APOperations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APOperations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0A6A3D1BEA4FE300FC516E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA41A9C01E5567A9002E8093 /* APReadFileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APReadFileOperation.h; sourceTree = "<group>"; };
+		FA41A9C11E5567A9002E8093 /* APReadFileOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APReadFileOperation.m; sourceTree = "<group>"; };
+		FA41A9C21E5567A9002E8093 /* APWriteFileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APWriteFileOperation.h; sourceTree = "<group>"; };
+		FA41A9C31E5567A9002E8093 /* APWriteFileOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWriteFileOperation.m; sourceTree = "<group>"; };
 		FA436DB01D6B960700D0E172 /* NSError+APOperationErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+APOperationErrors.h"; sourceTree = "<group>"; };
 		FA436DB11D6B960700D0E172 /* NSError+APOperationErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+APOperationErrors.m"; sourceTree = "<group>"; };
 		FA436DB21D6B960700D0E172 /* NSOperation+APOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperation+APOperation.h"; sourceTree = "<group>"; };
@@ -271,6 +279,8 @@
 		FA436DDA1D6B963400D0E172 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				FA436DE71D6B963400D0E172 /* APOperation.h */,
+				FA436DE81D6B963400D0E172 /* APOperation.m */,
 				FA436DDB1D6B963400D0E172 /* APAlertOperation.h */,
 				FA436DDC1D6B963400D0E172 /* APAlertOperation.m */,
 				FA436DDD1D6B963400D0E172 /* APBlockOperation.h */,
@@ -283,8 +293,10 @@
 				FA436DE41D6B963400D0E172 /* APLocationOperation.m */,
 				FA436DE51D6B963400D0E172 /* APNetworkOperation.h */,
 				FA436DE61D6B963400D0E172 /* APNetworkOperation.m */,
-				FA436DE71D6B963400D0E172 /* APOperation.h */,
-				FA436DE81D6B963400D0E172 /* APOperation.m */,
+				FA41A9C01E5567A9002E8093 /* APReadFileOperation.h */,
+				FA41A9C11E5567A9002E8093 /* APReadFileOperation.m */,
+				FA41A9C21E5567A9002E8093 /* APWriteFileOperation.h */,
+				FA41A9C31E5567A9002E8093 /* APWriteFileOperation.m */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -324,6 +336,7 @@
 				FA436E111D6B963400D0E172 /* APNetworkOperation.h in Headers */,
 				FA436DB41D6B960700D0E172 /* NSError+APOperationErrors.h in Headers */,
 				FA436DEA1D6B963400D0E172 /* APOperations.h in Headers */,
+				FA41A9C61E5567A9002E8093 /* APWriteFileOperation.h in Headers */,
 				FA436DB61D6B960700D0E172 /* NSOperation+APOperation.h in Headers */,
 				FA436E091D6B963400D0E172 /* APBlockOperation.h in Headers */,
 				FA436E021D6B963400D0E172 /* APOperationObserver.h in Headers */,
@@ -340,6 +353,7 @@
 				FA436DF61D6B963400D0E172 /* APExclusivityController.h in Headers */,
 				FA436E0D1D6B963400D0E172 /* APGroupOperation.h in Headers */,
 				FA436DFE1D6B963400D0E172 /* APBlockObserver.h in Headers */,
+				FA41A9C41E5567A9002E8093 /* APReadFileOperation.h in Headers */,
 				FA436E001D6B963400D0E172 /* APNetworkObserver.h in Headers */,
 				FA436DFA1D6B963400D0E172 /* APReachabilityController.h in Headers */,
 				FA436E0B1D6B963400D0E172 /* APDelayOperation.h in Headers */,
@@ -471,6 +485,7 @@
 				FA436DB71D6B960700D0E172 /* NSOperation+APOperation.m in Sources */,
 				FA436E121D6B963400D0E172 /* APNetworkOperation.m in Sources */,
 				FA436DEE1D6B963400D0E172 /* APLocationCondition.m in Sources */,
+				FA41A9C51E5567A9002E8093 /* APReadFileOperation.m in Sources */,
 				FA436E141D6B963400D0E172 /* APOperation.m in Sources */,
 				FA436DF71D6B963400D0E172 /* APExclusivityController.m in Sources */,
 				FA436DF51D6B963400D0E172 /* APReachabilityCondition.m in Sources */,
@@ -486,6 +501,7 @@
 				FA436E061D6B963400D0E172 /* APOperationQueue.m in Sources */,
 				FA436DEC1D6B963400D0E172 /* APCalendarCondition.m in Sources */,
 				FA436DB51D6B960700D0E172 /* NSError+APOperationErrors.m in Sources */,
+				FA41A9C71E5567A9002E8093 /* APWriteFileOperation.m in Sources */,
 				FA436DFD1D6B963400D0E172 /* APBackgroundObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
