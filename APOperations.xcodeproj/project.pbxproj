@@ -21,57 +21,57 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		FA41A9C41E5567A9002E8093 /* APReadFileOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41A9C01E5567A9002E8093 /* APReadFileOperation.h */; };
+		FA41A9C41E5567A9002E8093 /* APReadFileOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41A9C01E5567A9002E8093 /* APReadFileOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA41A9C51E5567A9002E8093 /* APReadFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA41A9C11E5567A9002E8093 /* APReadFileOperation.m */; };
-		FA41A9C61E5567A9002E8093 /* APWriteFileOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41A9C21E5567A9002E8093 /* APWriteFileOperation.h */; };
+		FA41A9C61E5567A9002E8093 /* APWriteFileOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41A9C21E5567A9002E8093 /* APWriteFileOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA41A9C71E5567A9002E8093 /* APWriteFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA41A9C31E5567A9002E8093 /* APWriteFileOperation.m */; };
-		FA436DB41D6B960700D0E172 /* NSError+APOperationErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB01D6B960700D0E172 /* NSError+APOperationErrors.h */; };
+		FA436DB41D6B960700D0E172 /* NSError+APOperationErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB01D6B960700D0E172 /* NSError+APOperationErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DB51D6B960700D0E172 /* NSError+APOperationErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DB11D6B960700D0E172 /* NSError+APOperationErrors.m */; };
-		FA436DB61D6B960700D0E172 /* NSOperation+APOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB21D6B960700D0E172 /* NSOperation+APOperation.h */; };
+		FA436DB61D6B960700D0E172 /* NSOperation+APOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB21D6B960700D0E172 /* NSOperation+APOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DB71D6B960700D0E172 /* NSOperation+APOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DB31D6B960700D0E172 /* NSOperation+APOperation.m */; };
 		FA436DE91D6B963400D0E172 /* APInvalidInitializerMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB81D6B963400D0E172 /* APInvalidInitializerMacro.h */; };
-		FA436DEA1D6B963400D0E172 /* APOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB91D6B963400D0E172 /* APOperations.h */; };
-		FA436DEB1D6B963400D0E172 /* APCalendarCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DBB1D6B963400D0E172 /* APCalendarCondition.h */; };
+		FA436DEA1D6B963400D0E172 /* APOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DB91D6B963400D0E172 /* APOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA436DEB1D6B963400D0E172 /* APCalendarCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DBB1D6B963400D0E172 /* APCalendarCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DEC1D6B963400D0E172 /* APCalendarCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DBC1D6B963400D0E172 /* APCalendarCondition.m */; };
-		FA436DED1D6B963400D0E172 /* APLocationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DBD1D6B963400D0E172 /* APLocationCondition.h */; };
+		FA436DED1D6B963400D0E172 /* APLocationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DBD1D6B963400D0E172 /* APLocationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DEE1D6B963400D0E172 /* APLocationCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DBE1D6B963400D0E172 /* APLocationCondition.m */; };
-		FA436DEF1D6B963400D0E172 /* APMutuallyExclusiveCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DBF1D6B963400D0E172 /* APMutuallyExclusiveCondition.h */; };
+		FA436DEF1D6B963400D0E172 /* APMutuallyExclusiveCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DBF1D6B963400D0E172 /* APMutuallyExclusiveCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DF01D6B963400D0E172 /* APMutuallyExclusiveCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DC01D6B963400D0E172 /* APMutuallyExclusiveCondition.m */; };
-		FA436DF11D6B963400D0E172 /* APOperationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC11D6B963400D0E172 /* APOperationCondition.h */; };
-		FA436DF21D6B963400D0E172 /* APOperationConditionEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC21D6B963400D0E172 /* APOperationConditionEvaluator.h */; };
+		FA436DF11D6B963400D0E172 /* APOperationCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC11D6B963400D0E172 /* APOperationCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA436DF21D6B963400D0E172 /* APOperationConditionEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC21D6B963400D0E172 /* APOperationConditionEvaluator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DF31D6B963400D0E172 /* APOperationConditionEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DC31D6B963400D0E172 /* APOperationConditionEvaluator.m */; };
-		FA436DF41D6B963400D0E172 /* APReachabilityCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC41D6B963400D0E172 /* APReachabilityCondition.h */; };
+		FA436DF41D6B963400D0E172 /* APReachabilityCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC41D6B963400D0E172 /* APReachabilityCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DF51D6B963400D0E172 /* APReachabilityCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DC51D6B963400D0E172 /* APReachabilityCondition.m */; };
-		FA436DF61D6B963400D0E172 /* APExclusivityController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC71D6B963400D0E172 /* APExclusivityController.h */; };
+		FA436DF61D6B963400D0E172 /* APExclusivityController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC71D6B963400D0E172 /* APExclusivityController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DF71D6B963400D0E172 /* APExclusivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DC81D6B963400D0E172 /* APExclusivityController.m */; };
-		FA436DF81D6B963400D0E172 /* APNetworkIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC91D6B963400D0E172 /* APNetworkIndicatorController.h */; };
+		FA436DF81D6B963400D0E172 /* APNetworkIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DC91D6B963400D0E172 /* APNetworkIndicatorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DF91D6B963400D0E172 /* APNetworkIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DCA1D6B963400D0E172 /* APNetworkIndicatorController.m */; };
-		FA436DFA1D6B963400D0E172 /* APReachabilityController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DCB1D6B963400D0E172 /* APReachabilityController.h */; };
+		FA436DFA1D6B963400D0E172 /* APReachabilityController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DCB1D6B963400D0E172 /* APReachabilityController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DFB1D6B963400D0E172 /* APReachabilityController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DCC1D6B963400D0E172 /* APReachabilityController.m */; };
-		FA436DFC1D6B963400D0E172 /* APBackgroundObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DCE1D6B963400D0E172 /* APBackgroundObserver.h */; };
+		FA436DFC1D6B963400D0E172 /* APBackgroundObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DCE1D6B963400D0E172 /* APBackgroundObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DFD1D6B963400D0E172 /* APBackgroundObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DCF1D6B963400D0E172 /* APBackgroundObserver.m */; };
-		FA436DFE1D6B963400D0E172 /* APBlockObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD01D6B963400D0E172 /* APBlockObserver.h */; };
+		FA436DFE1D6B963400D0E172 /* APBlockObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD01D6B963400D0E172 /* APBlockObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436DFF1D6B963400D0E172 /* APBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DD11D6B963400D0E172 /* APBlockObserver.m */; };
-		FA436E001D6B963400D0E172 /* APNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD21D6B963400D0E172 /* APNetworkObserver.h */; };
+		FA436E001D6B963400D0E172 /* APNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD21D6B963400D0E172 /* APNetworkObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E011D6B963400D0E172 /* APNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DD31D6B963400D0E172 /* APNetworkObserver.m */; };
-		FA436E021D6B963400D0E172 /* APOperationObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD41D6B963400D0E172 /* APOperationObserver.h */; };
-		FA436E031D6B963400D0E172 /* APTimeoutObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD51D6B963400D0E172 /* APTimeoutObserver.h */; };
+		FA436E021D6B963400D0E172 /* APOperationObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD41D6B963400D0E172 /* APOperationObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA436E031D6B963400D0E172 /* APTimeoutObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD51D6B963400D0E172 /* APTimeoutObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E041D6B963400D0E172 /* APTimeoutObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DD61D6B963400D0E172 /* APTimeoutObserver.m */; };
-		FA436E051D6B963400D0E172 /* APOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD81D6B963400D0E172 /* APOperationQueue.h */; };
+		FA436E051D6B963400D0E172 /* APOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DD81D6B963400D0E172 /* APOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E061D6B963400D0E172 /* APOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DD91D6B963400D0E172 /* APOperationQueue.m */; };
-		FA436E071D6B963400D0E172 /* APAlertOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DDB1D6B963400D0E172 /* APAlertOperation.h */; };
+		FA436E071D6B963400D0E172 /* APAlertOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DDB1D6B963400D0E172 /* APAlertOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E081D6B963400D0E172 /* APAlertOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DDC1D6B963400D0E172 /* APAlertOperation.m */; };
-		FA436E091D6B963400D0E172 /* APBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DDD1D6B963400D0E172 /* APBlockOperation.h */; };
+		FA436E091D6B963400D0E172 /* APBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DDD1D6B963400D0E172 /* APBlockOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E0A1D6B963400D0E172 /* APBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DDE1D6B963400D0E172 /* APBlockOperation.m */; };
-		FA436E0B1D6B963400D0E172 /* APDelayOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DDF1D6B963400D0E172 /* APDelayOperation.h */; };
+		FA436E0B1D6B963400D0E172 /* APDelayOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DDF1D6B963400D0E172 /* APDelayOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E0C1D6B963400D0E172 /* APDelayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DE01D6B963400D0E172 /* APDelayOperation.m */; };
-		FA436E0D1D6B963400D0E172 /* APGroupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DE11D6B963400D0E172 /* APGroupOperation.h */; };
+		FA436E0D1D6B963400D0E172 /* APGroupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DE11D6B963400D0E172 /* APGroupOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E0E1D6B963400D0E172 /* APGroupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DE21D6B963400D0E172 /* APGroupOperation.m */; };
-		FA436E0F1D6B963400D0E172 /* APLocationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DE31D6B963400D0E172 /* APLocationOperation.h */; };
+		FA436E0F1D6B963400D0E172 /* APLocationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DE31D6B963400D0E172 /* APLocationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E101D6B963400D0E172 /* APLocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DE41D6B963400D0E172 /* APLocationOperation.m */; };
-		FA436E111D6B963400D0E172 /* APNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DE51D6B963400D0E172 /* APNetworkOperation.h */; };
+		FA436E111D6B963400D0E172 /* APNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DE51D6B963400D0E172 /* APNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E121D6B963400D0E172 /* APNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DE61D6B963400D0E172 /* APNetworkOperation.m */; };
-		FA436E131D6B963400D0E172 /* APOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DE71D6B963400D0E172 /* APOperation.h */; };
+		FA436E131D6B963400D0E172 /* APOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA436DE71D6B963400D0E172 /* APOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA436E141D6B963400D0E172 /* APOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA436DE81D6B963400D0E172 /* APOperation.m */; };
 		FAAAF4701C08C6390008E8A6 /* APWaitOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF46F1C08C6390008E8A6 /* APWaitOperation.m */; };
 		FAE1BAA81C0811010033CF49 /* APOperationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE1BAA71C0811010033CF49 /* APOperationsTests.m */; };
@@ -196,8 +196,8 @@
 		FA0A6A3A1BEA4FE300FC516E /* APOperations */ = {
 			isa = PBXGroup;
 			children = (
-				FA436DB81D6B963400D0E172 /* APInvalidInitializerMacro.h */,
 				FA436DB91D6B963400D0E172 /* APOperations.h */,
+				FA436DB81D6B963400D0E172 /* APInvalidInitializerMacro.h */,
 				FA436DD71D6B963400D0E172 /* Operation Queue */,
 				FA436DDA1D6B963400D0E172 /* Operations */,
 				FA436DBA1D6B963400D0E172 /* Conditions */,
