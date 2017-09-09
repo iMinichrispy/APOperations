@@ -6,20 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		FA430AC01C077EF000D38567 /* APOperations-Universal */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = FA430AC11C077EF000D38567 /* Build configuration list for PBXAggregateTarget "APOperations-Universal" */;
-			buildPhases = (
-				FA430AC41C077EFA00D38567 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = "APOperations-Universal";
-			productName = "APOperations-Universal";
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		FA41A9C41E5567A9002E8093 /* APReadFileOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41A9C01E5567A9002E8093 /* APReadFileOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA41A9C51E5567A9002E8093 /* APReadFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA41A9C11E5567A9002E8093 /* APReadFileOperation.m */; };
@@ -410,9 +396,6 @@
 					FA0A6A371BEA4FE300FC516E = {
 						CreatedOnToolsVersion = 7.1;
 					};
-					FA430AC01C077EF000D38567 = {
-						CreatedOnToolsVersion = 7.1.1;
-					};
 					FAE1BAA41C0811010033CF49 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
@@ -431,7 +414,6 @@
 			projectRoot = "";
 			targets = (
 				FA0A6A371BEA4FE300FC516E /* APOperations */,
-				FA430AC01C077EF000D38567 /* APOperations-Universal */,
 				FAE1BAA41C0811010033CF49 /* APOperationsTests */,
 			);
 		};
@@ -453,22 +435,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		FA430AC41C077EFA00D38567 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "FRAMEWORK_NAME=\"APOperations\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Framework for device and simulator\n######################\n\nxcodebuild -target ${FRAMEWORK_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator CONFIGURATION_TEMP_DIR=${BUILD_DIR}/../Intermediates ONLY_ACTIVE_ARCH=NO\n\nxcodebuild -target ${FRAMEWORK_NAME} -configuration ${CONFIGURATION} -sdk iphoneos clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos CONFIGURATION_TEMP_DIR=${BUILD_DIR}/../Intermediates ONLY_ACTIVE_ARCH=NO\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\nmkdir \"${FRAMEWORK}\"\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n######################\n# Copy framework to Georgia Tech Directory\n######################\n\nOUTPUT_DIR=\"/Users/Alex/Alex Docs/Xcode/Alex Projects/Georgia Tech Project/GeorgiaTech/Frameworks/\"\nmkdir -p \"$OUTPUT_DIR\"\ncp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n\n######################\n# Delete intermediates build directory\n######################\n\nrm -rf \"${SRCROOT}/build\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA0A6A331BEA4FE300FC516E /* Sources */ = {
@@ -656,20 +622,6 @@
 			};
 			name = Release;
 		};
-		FA430AC21C077EF000D38567 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		FA430AC31C077EF000D38567 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		FAE1BAAE1C0811010033CF49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -707,15 +659,6 @@
 			buildConfigurations = (
 				FA0A6A411BEA4FE300FC516E /* Debug */,
 				FA0A6A421BEA4FE300FC516E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA430AC11C077EF000D38567 /* Build configuration list for PBXAggregateTarget "APOperations-Universal" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA430AC21C077EF000D38567 /* Debug */,
-				FA430AC31C077EF000D38567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
