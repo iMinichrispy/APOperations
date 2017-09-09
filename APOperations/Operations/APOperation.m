@@ -117,6 +117,11 @@ typedef NS_ENUM(NSInteger, APOperationState) {
     // To be implemented by subclasses
 }
 
+- (void)cancelWithError:(nullable NSError *)error {
+    NSArray<NSError *> *errors = (error != nil) ? @[error] : nil;
+    [self cancelWithErrors:errors];
+}
+
 - (void)cancelWithErrors:(nullable NSArray<NSError *> *)errors {
     if (errors.count) {
         [_internalErrors addObjectsFromArray:errors];

@@ -37,7 +37,7 @@ static NSString *const APTimeoutObserverKey = @"Timeout";
         // Cancel the operation if it hasn't finished and hasn't already been cancelled
         if (!operation.finished && !operation.cancelled) {
             NSError *error = [NSError operationErrorWithCode:APOperationErrorCodeExecutionFailed userInfo:@{APTimeoutObserverKey: @(_timeout)}];
-            [operation cancelWithErrors:@[error]];
+            [operation cancelWithError:error];
         }
     });
 }

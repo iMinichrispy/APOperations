@@ -35,8 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract Appends the errors to the operation's internal errors and cancels the operation
- * @param errors The errors causing the operation to cancel
+ * @param error The error (or errors) causing the operation to cancel
  */
+- (void)cancelWithError:(nullable NSError *)error;
 - (void)cancelWithErrors:(nullable NSArray<NSError *> *)errors;
 
 /*!
