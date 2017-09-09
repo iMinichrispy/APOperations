@@ -74,7 +74,9 @@
 
 - (void)aggregateError:(NSError *)error {
     // Note that some part of execution has produced an error. Errors aggregated through this method will be included in the final array of errors reported to observers and to the finished: method.
-    [_aggregatedErrors addObject:error];
+    if (error) {
+        [_aggregatedErrors addObject:error];
+    }
 }
 
 #pragma mark - APOperationQueueDelegate
