@@ -10,7 +10,7 @@
 
 @implementation NSOperation (APOperation)
 
-- (void)ap_addCompletionBlock:(nonnull void(^)())completion {
+- (void)ap_addCompletionBlock:(nonnull void(^)(void))completion {
     void (^existingBlock)(void) = self.completionBlock;
     
     if (existingBlock) {

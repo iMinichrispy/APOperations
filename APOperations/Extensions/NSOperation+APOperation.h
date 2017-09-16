@@ -15,8 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @abstract Add a completion block to be executed after the `NSOperation` enters the "finished" state
  */
-- (void)ap_addCompletionBlock:(void(^)())completion;
-
+- (void)ap_addCompletionBlock:(void(^)(void))completion;
 
 /*!
  * @abstract Add multiple depdendencies to the operation

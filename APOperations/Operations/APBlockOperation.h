@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^APBlockOperationContinuation)();
+typedef void(^APBlockOperationContinuation)(void);
 typedef void(^APBlockOperationBlock)(APBlockOperationContinuation continuation);
 
 /*!
