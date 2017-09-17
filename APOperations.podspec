@@ -15,5 +15,5 @@ Also incorporates changes made to the sample code in PSOperations: https://githu
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'APOperations/**/*'
+  s.source_files = 'APOperations/**/*.{h,m,swift}'
 end
