@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'APOperations'
-  s.version          = '1.0.0'
+  s.version          = '1.1'
   s.summary          = 'An Objective-C implementation of the WWDC 2015 Advanced NSOperations sample code'
   s.description      = <<-DESC
 APOperations is an Objective-C implementation of the WWDC 2015 Advanced NSOperations sample code: https://developer.apple.com/videos/play/wwdc2015-226/
